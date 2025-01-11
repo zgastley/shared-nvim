@@ -2,11 +2,26 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "nordic",
+      colorscheme = "tokyonight-night",
+    },
+  },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
     },
   },
   {
     "AlexvZyl/nordic.nvim",
+    config = function()
+      require("nordic").setup({
+        transparent_bg = true, -- Enable transparent background
+        -- You can include additional configurations here
+      })
+      require("nordic").load() -- Load the theme
+    end,
   },
   {
     "rebelot/kanagawa.nvim",

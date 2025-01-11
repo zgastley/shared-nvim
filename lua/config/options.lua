@@ -7,3 +7,5 @@ vim.filetype.add({
     tfvars = "terraform",
   },
 })
+
+vim.opt.relativenumber = false
