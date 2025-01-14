@@ -1,10 +1,5 @@
 return {
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight-night",
-    },
-  },
+
   {
     "folke/tokyonight.nvim",
     lazy = false,
@@ -20,7 +15,6 @@ return {
         transparent_bg = true, -- Enable transparent background
         -- You can include additional configurations here
       })
-      require("nordic").load() -- Load the theme
     end,
   },
   {
@@ -82,8 +76,15 @@ return {
           "wildcharm",
           "zaibatsu",
           "zellner",
+          "tokyonight",
         },
       })
     end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "tokyonight",
+    },
   },
 }
