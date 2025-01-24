@@ -5,15 +5,15 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = true,
+      -- transparent = true,
     },
   },
   {
     "AlexvZyl/nordic.nvim",
     config = function()
       require("nordic").setup({
-        transparent_bg = true, -- Enable transparent background
-        -- You can include additional configurations here
+        -- transparent_bg = true, -- Enable transparent background
+        -- -- You can include additional configurations here
       })
     end,
   },

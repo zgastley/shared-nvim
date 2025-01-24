@@ -9,3 +9,4 @@ vim.filetype.add({
 })
 
 vim.opt.relativenumber = false
+vim.diagnostic.config({ virtual_text = false })
