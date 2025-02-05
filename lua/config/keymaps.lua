@@ -4,7 +4,7 @@
 -- Define a table to hold your key mappings
 local keymaps = {
   -- Map '\' to reveal NeoTree
-  { "\\", ":Neotree toggle<CR>", desc = "NeoTree toggle" },
+  -- { "\\", ":Neotree toggle<CR>", desc = "NeoTree toggle" },
 }
 
 -- Function to set the keymaps
